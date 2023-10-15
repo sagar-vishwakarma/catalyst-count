@@ -1,0 +1,12 @@
+{% extends "catalyst_user/home.html" %}
+
+{% block content %}
+<form action="/upload/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="form-group">
+      <label for="fileInput">Upload Data</label>
+      <input type="file" class="form-control-file" id="fileInput" name="file">
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
+  </form>
+{% endblock %}
