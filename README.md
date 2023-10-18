@@ -2,6 +2,7 @@
 Clone the project  
 Create virtual environment  
 pip install django django restframework  
+open settings.py and add username,password,schema name of your postgre sql in Database section  
 python manage.py createsuperuser  
 python manage.py makemigrations  
 python manage.py migrate  
